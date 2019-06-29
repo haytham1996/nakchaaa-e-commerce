@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+xpanthersolutions.com	TRUE	/	FALSE	1999999999	PHPSESSID	ssckl063bcm5eerf2868t4l4f3
+xpanthersolutions.com	TRUE	/	FALSE	1999999999	_wpas_session	a6014bb0c03eb4b3fe1e2caccc9fb618%7C%7C1560947310%7C%7C1560946950
+
