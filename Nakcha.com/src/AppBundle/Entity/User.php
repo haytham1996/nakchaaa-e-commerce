@@ -36,11 +36,39 @@ class User extends BaseUser
     protected $prenom;
 
     /**
-     * @var integer
+     * @var string
      *
      * @ORM\Column(name="tel", type="string", length=255)
      */
     protected $tel;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pays", type="string", length=255)
+     */
+    protected $pays;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="code_postal", type="string", length=255)
+     */
+    protected $codePostal;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="adresse", type="string", length=255)
+     */
+    protected $adresse;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="sexe", type="boolean")
+     */
+    protected $sexe;
 
 
     /**
@@ -104,7 +132,7 @@ class User extends BaseUser
     /**
      * Set tel
      *
-     * @param int $tel
+     * @param string $tel
      *
      * @return User
      */
@@ -118,11 +146,77 @@ class User extends BaseUser
     /**
      * Get tel
      *
-     * @return int
+     * @return string
      */
     public function getTel()
     {
         return $this->tel;
     }
+
+    /**
+     * @return string
+     */
+    public function getCodePostal()
+    {
+        return $this->codePostal;
+    }
+
+    /**
+     * @param string $codePostal
+     */
+    public function setCodePostal($codePostal)
+    {
+        $this->codePostal = $codePostal;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAdresse()
+    {
+        return $this->adresse;
+    }
+
+    /**
+     * @param string $adresse
+     */
+    public function setAdresse($adresse)
+    {
+        $this->adresse = $adresse;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPays()
+    {
+        return $this->pays;
+    }
+
+    /**
+     * @param string $pays
+     */
+    public function setPays($pays)
+    {
+        $this->pays = $pays;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isSexe()
+    {
+        return $this->sexe;
+    }
+
+    /**
+     * @param bool $sexe
+     */
+    public function setSexe($sexe)
+    {
+        $this->sexe = $sexe;
+    }
+
+
 }
 
